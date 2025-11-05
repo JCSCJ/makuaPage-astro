@@ -1,16 +1,32 @@
 ---
-
+import BaseLayout from "../layouts/baseLayout.astro";
+import "/src/styles/global.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+    <div>
+		<section class="max-w-max mx-auto px-2 pt-5 pb-10">
+			<p class="text-2xl font-bold text-center mb-6">Destacados</p>
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+				<img src="/jeans/0.01063.0.png" alt="Jean 1" class="w-full h-95 object-cover" />
+				<img src="/jeans/0.01063.1.png" alt="Jean 2" class="w-full h-95 object-cover" />
+				<img src="/jeans/0.01063.2.png" alt="Jean 3" class="w-full h-95 object-cover" />
+				<img src="/jeans/0.01063.3.png" alt="Jean 4" class="w-full h-95 object-cover" />
+				<img src="/jeans/0.01134.0.png" alt="Jean 5" class="w-full h-95 object-cover" />
+				<img src="/jeans/00.01130.0.png" alt="Jean 6" class="w-full h-95 object-cover" />
+				<img src="/jeans/00.01130.1.png" alt="Jean 7" class="w-full h-95 object-cover" />
+				<img src="/jeans/00.01130.2.png" alt="Jean 8" class="w-full h-95 object-cover" />
+				<img src="/jeans/00.01130.3.png" alt="Jean 9" class="w-full h-95 object-cover" />
+				<img src="/jeans/0.01134.0.png" alt="Jean 10" class="w-full h-95 object-cover" />
+				<img src="/jeans/00.01168.0.png" alt="Jean 11" class="w-full h-95 object-cover" />
+				<img src="/jeans/00.01168.1.png" alt="Jean 12" class="w-full h-95 object-cover" />
+
+
+
+
+
+
+			</div>
+		</section>
+	</div>
+</BaseLayout>

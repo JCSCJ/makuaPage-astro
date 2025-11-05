@@ -1,0 +1,44 @@
+---
+import "../styles/global.css";
+---
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Astro</title>
+    </head>
+    <body class="min-h-screen flex flex-col">
+        <header class="relative h-[90vh] w-full bg-cover bg-center flex flex-col"style="background-image: url('/img/fondo.jpg');">
+            <div class="absolute inset-0 bg-black/60"></div>
+                <nav class="relative z-10 flex items-center justify-between px-10 py-3 text-white bg-black/70 backdrop-blur-sm">
+                    <div class="flex items-center space-x-8">
+                        <a href="../assets/M.png" class="text-lg font-semibold">Logo</a>
+                        <ul class="hidden md:flex space-x-6 text-sm font-light">
+                            <li><a href="" class="hover:text-gray-300 transition">Nuevos diseños</a></li>
+                            <li><a href="" class="hover:text-gray-300 transition">Marcas</a></li>
+                            <li><a href="" class="hover:text-gray-300 transition">Redes</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden md:flex space-x-6 text-sm font-light">
+                        <ul class="hidden md:flex space-x-6 text-sm font-light">
+                            <li><a href="" class="hover:text-gray-300 transition">Sobre nosotros</a></li>
+                            <li><a href="" class="hover:text-gray-300 transition">Contactanos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="relative z-10 flex flex-col items-center justify-center flex-grow text-center text-white pt-6">
+                    <h1 class="text-xl md:text-6xl font-semibold mb-6 drop-shadow-lg">Bienvenido a Makua</h1>
+                    <button class="bg-white text-black px-4 py-2 mt-10 rounded-xl text-lg font-semibold hover:bg-gray-200 transition">Explorar marcas</button>
+                </div>
+            <slot name="header"></slot>
+        </header>
+
+        
+        <main class="bg-black text-white flex-1">
+            <slot />
+        </main>
+
+        <footer class="bg-white text-black text-center p-4 pt-10">
+            <slot name="footer">© 2025</slot>
+        </footer>
+    </body>
+</html>
