@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/baseLayout.astro";
+import "/src/styles/global.css";
+---
+<BaseLayout title="Marcas">
+  <section class="py-11">
+
+    <h1 class="text-2xl font-semibold py-10 border-b border-t w-full text-center">
+      MARCAS
+    </h1>
+
+    <div class="w-full max-w-lg mx-auto text-center">
+
+      <p class="text-lg pt-10">
+        Trabajamos con marcas exclusivas que garantizan calidad y estilo.
+      </p>
+
+      <div class="grid grid-cols-1 gap-6 place-items-center py-12">
+        <img src="/logo/MAKUAwhite.webp" alt="Marca 1"
+             class="w-64 h-auto object-contain" />
+
+        <img src="/logo/AXYwhite.webp" alt="Marca 2"
+             class="w-64 h-auto object-contain" />
+
+        <img src="/logo/MAGNAwhite.webp" alt="Marca 3"
+             class="w-64 h-auto object-contain" />
+
+        <img src="/logo/IQUITOS.webp" alt="Marca 4"
+             class="w-64 h-auto object-contain" />
+      </div>
+
+    </div>
+
+  </section>
+</BaseLayout>

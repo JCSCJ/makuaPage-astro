@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../layouts/baseLayout.astro";
+import "/src/styles/global.css";
+import WhatsAppIcon from "../icons/whatsapp.svg";
+import TikTokIcon from "../icons/tiktok.svg";
+import FacebookIcon from "../icons/facebook.svg";
+import InstagramIcon from "../icons/instagram.svg";
+---
+<BaseLayout title="Contáctanos">
+  <section class="px-10 text-center flex justify-center">
+    
+    <div class="w-full max-w-2xl">
+      
+      <div class="py-30 border-x border-b">
+        <h1 class="text-2xl font-semibold">CONTACTANOS</h1>
+        <p class="text-lg py-6 px-10">
+          Si tienes dudas sobre tallas, modelos, disponibilidad, precios o quieres hacer un pedido,
+          escríbenos con toda confianza. Te responderemos lo más pronto posible.
+        </p>
+      </div>
+
+      <div class="mx-auto py-16 pb-32 border-x flex flex-col items-center gap-16">
+
+        <div class="flex flex-col items-center gap-3 p-6 w-full">
+          <WhatsAppIcon class="w-24 h-24 fill-white" />
+          <p class="font-semibold text-lg">WhatsApp</p>
+
+          <a href="https://wa.me/573212017060" target="_blank"
+            class="border mb-3  w-120 py-2 rounded-sm hover:bg-green-500 transition">
+            +57 3212017060
+          </a>
+
+          <a href="https://wa.me/573142258662" target="_blank"
+            class="border mb-3  w-120 py-2 rounded-sm hover:bg-green-500 transition">
+            +57 3142258662
+          </a>
+
+          <a href="https://wa.me/573228869655" target="_blank"
+            class="border text-white w-120 py-2 rounded-sm hover:bg-green-500 transition">
+            +57 3228869655
+          </a>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 p-6 w-full">
+          <InstagramIcon class="w-28 h-28 fill-white" />
+          <p class="font-semibold text-lg">Instagram</p>
+
+          <a href="https://www.instagram.com/makuajeans/?hl=es" target="_blank"
+            class="border w-120 py-2 rounded-sm hover:bg-rose-500 transition">
+            Ver Instagram
+          </a>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 p-6 w-full">
+          <FacebookIcon class="w-32 h-32 fill-white" />
+          <p class="font-semibold text-lg">Facebook</p>
+
+          <a href="https://www.facebook.com/MAKUAJEANS?locale=es_LA" target="_blank"
+            class="border w-120 py-2 rounded-sm hover:bg-blue-700 transition">
+            Ver Facebook
+          </a>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 p-6 w-full">
+          <TikTokIcon class="w-22 h-22 fill-white" />
+          <p class="font-semibold text-lg">TikTok</p>
+
+          <a href="https://www.tiktok.com/@makua.jeans" target="_blank"
+            class="border w-120 py-2 rounded-sm hover:bg-neutral-900 transition">
+            Ver TikTok
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
